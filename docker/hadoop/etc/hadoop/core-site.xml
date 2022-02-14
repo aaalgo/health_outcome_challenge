@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<configuration>
+<property><name>fs.default.name</name><value>hdfs://barton:8020/</value></property>
+<property>
+            <name>hadoop.tmp.dir</name>
+	    <value>/data/1/hadoop/tmp</value>
+    </property>
+</configuration>

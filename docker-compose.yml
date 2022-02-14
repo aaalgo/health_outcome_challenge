@@ -1,0 +1,31 @@
+version: '3'
+
+services:
+#  nginx:
+#    image: nginx:1.13.8
+#    depends_on:
+#        - minio
+#    volumes:
+#        - ./docker/nginx/conf.d:/etc/nginx/conf.d
+#        - ./docker/nginx/log:/var/log/nginx
+#    network_mode: "host"
+  minio:
+    image: minio/minio
+    command: server /data
+    volumes:
+      - /data2/minio:/data
+    network_mode: "host"
+#  redis:
+#    image: redis:5.0.7
+#    volumes:
+#      - /data/1/minio:/data
+#    network_mode: "host"
+#  mysql:
+#    container_name: mysql
+#    image: mysql:8.0.18
+#    environment:
+#        - MYSQL_ROOT_PASSWORD=cms
+#    volumes:
+#        - "/data/1/mysql:/var/lib/mysql"
+#    network_mode: "host"
+#

@@ -1,0 +1,14 @@
+1. Fix Hadoop Proxy Base
+Currently Hadoop WebUI must be port-forwarded.
+
+8088
+9870
+
+2. Hadoop Configuration
+
+DefaultResourceCalculator doesn't acknowledge vcore limitation.
+DominantResourceCalculator -- not effective
+
+
+
+Fix dates
